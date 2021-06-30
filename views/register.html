@@ -1,0 +1,114 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/96fb465b42.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&display=swap" rel="stylesheet">
+    <title>MercadoLiebre</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="\img\logo-mercado-liebre.svg" class="logo"> </img>
+            <h2 class="copy-header">
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+        
+        <div id="input">
+            <input placeholder="Buscar productos, marcas"><l class="fas fa-search"></l>
+        </div>
+
+        <a href="#" class="hamburguer-bottom">
+            <i class="fas fa-bars"></i>
+        </a>
+        
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li> <a href="#"> Ofertas </a> </li>
+                <li> <a href="#"> Tiendas Oficiales </a> </li>
+                <li> <a href="#"> Vender </a> </li>
+                <li> <a href="#"> Ayuda </a> </li>
+            </ul>
+            <ul class="right-navbar">
+                <li> <a href="#"> Crea tu cuenta <i class="far fa-id-card"> </i></a> </li>
+                <li> <a href="#"> Ingresa <i class="fas fa-sign-in-alt"></i> </a> </li>
+                <li> <a href="#"> Mis Compras <i class="fas fa-shopping-basket"></i> </a> </li>
+            </ul>
+        </nav>
+     </header>
+     <main>
+        <form action="" method="">
+            <p> <label for="nombre_apellido">Nombre y apellido:</label>
+                <input type="text" name="nombre_apellido"> </p>
+
+            <p> <label for="usuario">Nombre de usuari@:</label>
+                <input type="text" name="usuario"> </p>
+
+            <p> <label for="domicilio">Domicilio:</label>
+                <input type="text" name="domicilio"> </p>
+
+            <p> <label for="date">Fecha de Nacimiento:</label>
+                <input type="date" name="date"> </p>
+
+            <p> Perfil del usuario: </p>
+                <span> Comprar <input type="radio" name="perfil" value="Comprar"> </span>
+                <span> Vender <input type="radio" name="perfil" value="Vender" checked></span>
+            
+            <p> Categorías de interés (puede elegir más de una) </p>
+                <span> Electro
+                    <input type="checkbox" name="cat_interes" value="Electro"> </span>
+                <span> Moda 
+                    <input type="checkbox" name="cat_interes" value="Moda"> </span>
+                <span> Hogar
+                    <input type="checkbox" name="cat_interes" value="Hogar"> </span>
+                <span> Jugueteria
+                    <input type="checkbox" name="cat_interes" value="Jugueteria"> </span>
+                <span> Vida Sana
+                    <input type="checkbox" name="cat_interes" value="Vida Sana"> </span>
+            
+            <p> <label for="foto">Foto de Usuario</label>
+                <input type="file"  id="foto" name="foto" accept=".png, .jpg"> </p>  
+
+            <p> 
+                <label for="clave">Contraseña:</label>
+                <input type="password" name="clave"> </p>
+            
+            <p> 
+                <label for="clave">Confirmar contraseña:</label>
+                <input type="password" name="clave"> </p>
+
+
+            
+            <p>
+                <button type="reset">Borrar Datos</button>
+                <button type="submit"> <a href="/home.html"> Enviar </a></button> </p>
+
+        </form>
+     </main>
+     <footer>
+        <k class="fas fa-credit-card"> </k> <br>
+        <b> Pagá con tarjeta o efectivo
+        </b><br>
+        Con MercadoLiebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro! <br>
+        <br>
+        <k class="fas fa-gift"></k> <br>
+        <b> Envío gratis desde $ 2.500 </b><br>
+        Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos. <br>
+        <br>
+        <k class="fas fa-user-shield"></k> <br>
+        <b> Seguridad, de principio a fin </b><br>
+        ¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer, porque estás siempre protegid@. <br>
+        <br>
+        <p class="copy"> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+</body>
+
