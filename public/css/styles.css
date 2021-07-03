@@ -12,9 +12,8 @@ form {
     padding: 20px
     }
 
-.banner {
+.banner img {
     width: 100%;
-    margin: 0 auto;
 }
 
 .main-header {
@@ -63,12 +62,18 @@ form {
 }
 
 main {
-    width: 90vw;
+    /*width: 100vw;*/
     margin-bottom: 10px;
     border-top: solid 1px #ebebeb;
     background-color: white;
     text-align: center;  
     padding: 15px;}
+
+.visita {
+    border: solid 3px tomato;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 footer {
     background-color:white;
