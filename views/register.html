@@ -16,7 +16,7 @@
 <body>
     <header class="main-header">
         <div class="main-header-top-bar">
-            <img src="\img\logo-mercado-liebre.svg" class="logo"> </img>
+            <a href="/"><img src="\img\logo-mercado-liebre.svg" class="logo"> </img> </a>
             <h2 class="copy-header">
             <i class="fas fa-hand-holding-usd"></i>
             Comprá en cuotas y sin tarjeta de crédito
@@ -39,75 +39,100 @@
                 <li> <a href="#"> Ayuda </a> </li>
             </ul>
             <ul class="right-navbar">
-                <li> <a href="#"> Crea tu cuenta <i class="far fa-id-card"> </i></a> </li>
-                <li> <a href="#"> Ingresa <i class="fas fa-sign-in-alt"></i> </a> </li>
+                <li> <a href="./register.html"> Crea tu cuenta <i class="far fa-id-card"> </i></a> </li>
+                <li> <a href="./login.html"> Ingresa <i class="fas fa-sign-in-alt"></i> </a> </li>
                 <li> <a href="#"> Mis Compras <i class="fas fa-shopping-basket"></i> </a> </li>
             </ul>
         </nav>
      </header>
-     <main>
-        <form action="" method="">
-            <p> <label for="nombre_apellido">Nombre y apellido:</label>
-                <input type="text" name="nombre_apellido"> </p>
-
-            <p> <label for="usuario">Nombre de usuari@:</label>
-                <input type="text" name="usuario"> </p>
-
-            <p> <label for="domicilio">Domicilio:</label>
-                <input type="text" name="domicilio"> </p>
-
-            <p> <label for="date">Fecha de Nacimiento:</label>
-                <input type="date" name="date"> </p>
-
-            <p> Perfil del usuario: </p>
-                <span> Comprar <input type="radio" name="perfil" value="Comprar"> </span>
-                <span> Vender <input type="radio" name="perfil" value="Vender" checked></span>
-            
-            <p> Categorías de interés (puede elegir más de una) </p>
-                <span> Electro
-                    <input type="checkbox" name="cat_interes" value="Electro"> </span>
-                <span> Moda 
-                    <input type="checkbox" name="cat_interes" value="Moda"> </span>
-                <span> Hogar
-                    <input type="checkbox" name="cat_interes" value="Hogar"> </span>
-                <span> Jugueteria
-                    <input type="checkbox" name="cat_interes" value="Jugueteria"> </span>
-                <span> Vida Sana
-                    <input type="checkbox" name="cat_interes" value="Vida Sana"> </span>
-            
-            <p> <label for="foto">Foto de Usuario</label>
-                <input type="file"  id="foto" name="foto" accept=".png, .jpg"> </p>  
-
-            <p> 
-                <label for="clave">Contraseña:</label>
-                <input type="password" name="clave"> </p>
-            
-            <p> 
-                <label for="clave">Confirmar contraseña:</label>
-                <input type="password" name="clave"> </p>
-
-
-            
-            <p>
-                <button type="reset">Borrar Datos</button>
-                <button type="submit"> <a href="/home.html"> Enviar </a></button> </p>
-
-        </form>
-     </main>
-     <footer>
-        <k class="fas fa-credit-card"> </k> <br>
-        <b> Pagá con tarjeta o efectivo
-        </b><br>
-        Con MercadoLiebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro! <br>
-        <br>
-        <k class="fas fa-gift"></k> <br>
-        <b> Envío gratis desde $ 2.500 </b><br>
-        Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos. <br>
-        <br>
-        <k class="fas fa-user-shield"></k> <br>
-        <b> Seguridad, de principio a fin </b><br>
-        ¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer, porque estás siempre protegid@. <br>
-        <br>
+     <main class="form">
+        <section class="form-register">
+            <h3>Registrá tu usuario</h3>
+            <form method="POST">
+                <div class="row">
+                    <label for="fullname">Nombre y Apellido</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Escribe tu nombre completo sin iniciales">
+                </div>
+                <div class="row">
+                    <label for="username">Nombre de Usuario</label>
+                    <input type="text" name="username" id="username" placeholder="Escribe tu user Name">
+                </div>
+                <div>
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="date" name="date" id="date" placeholder="Fecha de Nacimiento">
+                </div>
+                <div class="row">
+                    <label for="address">Dirección</label>
+                    <input type="text" name="address" id="Address" placeholder="Escribe tu dirección">
+                </div>
+                    <label>Perfil de Usuario</label>
+                <div class="row radio">
+                    <label> Comprador
+                        <input type="radio" name="perfil-usuario" value="comprador">
+                    </label>
+                    <label>Vendedor
+                        <input type="radio" name="perfil-usuario" value="vendedor">
+                    </label>
+                </div>
+                <div class="row">
+                    <label>Intereses</label>
+                </div>
+                <div class="row">
+                    <label><input type="checkbox" name="categoria-interes" value="electro"> Electro</label>
+                </div>
+                <div class="row">
+                    <label><input type="checkbox" name="categoria-interes" value="moda"> Moda</label>
+                </div>
+                <div class="row">
+                    <label><input type="checkbox" name="categoria-interes" value="hogar"> Hogar</label>
+                </div>
+                <div class="row">
+                    <label><input type="checkbox" name="categoria-interes" value="jugueteria"> Juguetería</label>
+                </div>
+                <div class="row">
+                    <label><input type="checkbox" name="categoria-interes" value="vida-sana"> Vida Sana</label>
+                </div>
+                <div class="row">
+                    <br>
+                    <label for="avatar">Foto de Usuario</label>
+                    <input type="file"  id="avatar" name="avatar" accept=".png, .jpg">
+                </div>
+                <div class="row">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" pattern=".{6,}">
+                </div>
+                <div class="row">
+                    <label for="confirm-password">Confirmar Contraseña</label>
+                    <input type="password" name="confirm-password" id="confirm-password" pattern=".{6,}">
+                </div>
+                <div class="row">
+                    <button type="Send">Send</button>
+                    <button type="Reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-paga">
+            <div class="icono-footer">
+                <i class="fas fa-credit-card"> </i>
+            </div>
+            <b> Pagá con tarjeta o efectivo </b>
+            <p> Con MercadoLiebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro! <p>
+        </div>
+        <div class="footer-envio">
+            <div class="icono-footer">
+                <i class="fas fa-gift"></i>
+            </div>
+            <b> Envío gratis desde $ 2.500 </b>
+            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos. </p>
+        <div class="footer-devolvelo">
+            <div class="icono-footer">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <b> Seguridad, de principio a fin </b>
+            <p> ¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer, porque estás siempre protegid@. </p>
+        </div>
         <p class="copy"> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
 </body>

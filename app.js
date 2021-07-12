@@ -11,6 +11,9 @@ app.get('/register', (req,res) =>{
     res.sendFile(path.join(__dirname, 'register')); 
 });
 
+app.get('/login', (req,res) =>{
+    res.sendFile(path.join(__dirname, 'login')); 
+});
 
 app.use(express.static(path.join(__dirname, './public')));  
 
